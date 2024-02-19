@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGO_URI =
-  "mongodb+srv://merlinlibinmerlin:Merlinlibin96@cluster0.yhttcco.mongodb.net/MUSIC_APP";
+const MONGO_URI = `${process.env.MONGODB_URI}`;
 
 mongoose
   .connect(MONGO_URI)
